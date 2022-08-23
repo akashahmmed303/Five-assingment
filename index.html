@@ -43,7 +43,10 @@
                 <h2 class="card-title justify-center text-3xl">Lionel Messi</h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -62,7 +65,10 @@
                 </h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -81,7 +87,10 @@
                 </h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -89,11 +98,25 @@
             </div>
           </div>
 
-          <!-- Select -->
+          <!-- Selected -->
           <div class="border-none bg-black">
             <h1 class="text-3xl font-semibold text-white text-center mt-5">
-              Selected - V
+              Selected -
+              <span class="text-rose-600" id="total-selected-player">0</span>
             </h1>
+            <table class="text-white mt-2">
+              <thead>
+                <tr>
+                  <td class="px-5 py-2">Number</td>
+                  <td class="px-8 py-2">Player Name</td>
+                </tr>
+              </thead>
+              <tbody id="name-place">
+                <tr>
+                  <td class="text-center">Name</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <!--  -->
         </div>
@@ -111,7 +134,10 @@
                 <h2 class="card-title justify-center text-3xl">Neymar</h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -128,7 +154,10 @@
                 <h2 class="card-title justify-center text-3xl">Toni Kroos</h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -145,7 +174,10 @@
                 <h2 class="card-title justify-center text-3xl">Luis Suárez</h2>
                 <p class="text-center">36 Goals . 120 Assist</p>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                  <button
+                    class="btn btn-primary px-20 my-5 hover:bg-red-700"
+                    onclick="getSelectedBtn(this),disable(this)"
+                  >
                     SELECT
                   </button>
                 </div>
@@ -219,5 +251,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/addPlayer.js"></script>
   </body>
 </html>
