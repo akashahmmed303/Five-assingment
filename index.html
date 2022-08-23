@@ -215,6 +215,7 @@
               <div>
                 <span class="text-slate-300 text-xl p-5">Manager</span>
                 <input
+                  id="manager-field"
                   class="border bg-black font-semibold text-white w-28 p-2"
                   type="text"
                 />
@@ -222,12 +223,16 @@
               <div class="pt-5">
                 <span class="text-slate-300 text-xl p-5">Coach</span>
                 <input
+                  id="coach-field"
                   class="border bg-black font-semibold text-white w-28 mx-6 p-2"
                   type="text"
                 />
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary my-5 hover:bg-red-700">
+                <button
+                  id="calculate-total"
+                  class="btn btn-primary my-5 hover:bg-red-700"
+                >
                   Calculate Total
                 </button>
               </div>
@@ -235,7 +240,7 @@
                 <p class="text-slate-300 font-semibold text-xl px-5">
                   Total
                   <span class="ml-20 font-semibold text-2xl text-orange-500"
-                    >$<span>5000</span></span
+                    >$<span id="total">00</span></span
                   >
                 </p>
               </div>
