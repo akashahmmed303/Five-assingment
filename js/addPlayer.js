@@ -20,8 +20,6 @@ function getSelectedBtn(element) {
 function disable(x) {
   x.disabled = true;
 }
-t;
-
 function setPlayerName(name) {
   console.log(name.length);
   if (playerNameArray.length > 5) {

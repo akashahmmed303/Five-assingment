@@ -195,17 +195,21 @@
               </h1>
               <span class="text-slate-300 text-xl p-5">Per Player</span>
               <input
+                id="per-player-field"
                 class="border bg-black font-semibold text-white w-28 p-2"
                 type="text"
               />
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
+                <button
+                  id="calculate"
+                  class="btn btn-primary px-10 my-5 hover:bg-green-600"
+                >
                   Calculate
                 </button>
               </div>
               <div>
                 <p class="text-slate-300 text-xl px-5 py-3">
-                  Player Expenses $ <span>5000</span>
+                  Player Expenses $ <span id="expenses">00</span>
                 </p>
               </div>
               <div>
@@ -223,8 +227,8 @@
                 />
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-20 my-5 hover:bg-red-700">
-                  Calculate
+                <button class="btn btn-primary my-5 hover:bg-red-700">
+                  Calculate Total
                 </button>
               </div>
               <div>
@@ -252,5 +256,6 @@
       </div>
     </footer>
     <script src="js/addPlayer.js"></script>
+    <script src="js/budget.js"></script>
   </body>
 </html>
