@@ -30,4 +30,12 @@ document.getElementById("calculate-total"),
     const expenses = parseFloat(expensesFieldString);
 
     expensesField.innerText = perPlayer * 5;
+
+    const calculateTotal = manager + coach + expenses;
+
+    const totalField = document.getElementById("total");
+    const totalFieldString = totalField.innerText;
+    const total = parseFloat(totalFieldString);
+
+    totalField.innerText = calculateTotal;
   });
